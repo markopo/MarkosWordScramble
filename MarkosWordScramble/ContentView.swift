@@ -8,28 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var sortAsc = true
+    @State var people = [ "Jukka", "Pekka", "Marko", "Timo", "Kalle", "Pelle" ]
+    
+    func sortPeople() {
+        if(sortAsc) {
+          people = people.sorted()
+        } else {
+          people = people.sorted().reversed()
+        }
+        
+        sortAsc = !sortAsc
+    }
+    
     var body: some View {
         VStack {
            
             List {
-                Section("Section 1") {
+                Section("Start") {
                     Text("Marko says hello!")
                     Text("... yo?")
-                }
-                
-                Section("Section 2") {
-                    ForEach(1..<5) {
-                        Text("Hello World \($0)")
+                    Button(action: sortPeople) {
+                        Text("Sort")
                     }
                 }
+                .padding(.leading)
                 
-                Section("Section 3") {
+                Section("People") {
+                    ForEach(people, id: \.self) {
+                        Text($0)
+                    }
+                }
+                .padding(.leading)
+                
+                Section("End") {
                     Text("Marko says goodbye!")
                     Text("Hasta la vista, baby!")
                 }
+                .padding(.leading)
             }
+            .listStyle(.grouped)
+            .onAppear(perform: sortPeople)
         }
-        .padding()
     }
 }
 
