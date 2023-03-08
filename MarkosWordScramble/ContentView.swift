@@ -12,13 +12,21 @@ struct ContentView: View {
         VStack {
            
             List {
-                Text("Marko says hello!")
-                
-                ForEach(1..<11) {
-                    Text("Hello World \($0)")
+                Section("Section 1") {
+                    Text("Marko says hello!")
+                    Text("... yo?")
                 }
                 
-                Text("Marko says goodbye!")
+                Section("Section 2") {
+                    ForEach(1..<5) {
+                        Text("Hello World \($0)")
+                    }
+                }
+                
+                Section("Section 3") {
+                    Text("Marko says goodbye!")
+                    Text("Hasta la vista, baby!")
+                }
             }
         }
         .padding()
