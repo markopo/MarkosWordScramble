@@ -30,7 +30,7 @@ struct ContentView: View {
                     Text("... yo?")
                     Button(action: sortPeople) {
                         Text("Sort")
-                    }
+                    }.buttonStyle(.borderedProminent)
                 }
                 .padding(.leading)
                 
@@ -49,6 +49,7 @@ struct ContentView: View {
             }
             .listStyle(.grouped)
             .onAppear(perform: sortPeople)
+            .animation(.easeInOut(duration: 1.5), value: people)
         }
     }
 }
