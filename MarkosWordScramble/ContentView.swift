@@ -8,49 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var sortAsc = true
-    @State var people = [ "Jukka", "Pekka", "Marko", "Timo", "Kalle", "Pelle" ]
-    
-    func sortPeople() {
-        if(sortAsc) {
-          people = people.sorted()
-        } else {
-          people = people.sorted().reversed()
-        }
-        
-        sortAsc = !sortAsc
-    }
+    @State private var usedWords = [String]()
+    @State private var rootWord = ""
+    @State private var newWord = ""
     
     var body: some View {
-        VStack {
-           
+        NavigationView {
             List {
-                Section("Start") {
-                    Text("Marko says hello!")
-                    Text("... yo?")
-                    Button(action: sortPeople) {
-                        Text("Sort")
-                    }.buttonStyle(.borderedProminent)
+                Section {
+                    TextField("Enter your word:", text: $newWord)
+                        .textInputAutocapitalization(.never)
                 }
-                .padding(.leading)
                 
-                Section("People") {
-                    ForEach(people, id: \.self) {
-                        Text($0)
+                Section {
+                    ForEach(usedWords, id: \.self) { word in
+                        HStack {
+                            Image(systemName: "\(word.count).circle")
+                            Text(word)
+                        }
+                        
                     }
                 }
-                .padding(.leading)
-                
-                Section("End") {
-                    Text("Marko says goodbye!")
-                    Text("Hasta la vista, baby!")
-                }
-                .padding(.leading)
             }
-            .listStyle(.grouped)
-            .onAppear(perform: sortPeople)
-            .animation(.easeInOut(duration: 1.5), value: people)
         }
+        .navigationTitle(rootWord)
+        .onSubmit {
+            addNewWord()
+        }
+    }
+    
+    func addNewWord() {
+        let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard answer.count > 0 else { return }
+        
+        withAnimation {
+            usedWords.insert(answer, at: 0)
+        }
+        
+        newWord = ""
     }
 }
 
