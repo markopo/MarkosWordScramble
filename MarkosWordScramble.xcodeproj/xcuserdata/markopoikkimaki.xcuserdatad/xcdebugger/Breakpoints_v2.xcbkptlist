@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "74113A77-715A-4F79-AFB4-D31F262E36FA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "241C6F3D-81CF-487E-AC50-56FD798422EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MarkosWordScramble/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "startGame()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "241C6F3D-81CF-487E-AC50-56FD798422EC - 30e977db730bf50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarkosWordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "MarkosWordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markopoikkimaki/Documents/Code/iOs/MarkosWordScramble/MarkosWordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "705">
+               </Location>
+               <Location
+                  uuid = "241C6F3D-81CF-487E-AC50-56FD798422EC - 30e977db730bf50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarkosWordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "MarkosWordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markopoikkimaki/Documents/Code/iOs/MarkosWordScramble/MarkosWordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "138">
+               </Location>
+               <Location
+                  uuid = "241C6F3D-81CF-487E-AC50-56FD798422EC - 30e977db730bafa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MarkosWordScramble.ContentView.startGame() -&gt; ()"
+                  moduleName = "MarkosWordScramble"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markopoikkimaki/Documents/Code/iOs/MarkosWordScramble/MarkosWordScramble/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "201">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

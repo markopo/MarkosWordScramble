@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B41473929D2027F000A8EA0 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B41473829D2027F000A8EA0 /* start.txt */; };
 		0BA7C41929B89B7F00FBA49D /* MarkosWordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7C41829B89B7F00FBA49D /* MarkosWordScrambleApp.swift */; };
 		0BA7C41B29B89B7F00FBA49D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7C41A29B89B7F00FBA49D /* ContentView.swift */; };
 		0BA7C41D29B89B8000FBA49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7C41C29B89B8000FBA49D /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B41473829D2027F000A8EA0 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		0BA7C41529B89B7F00FBA49D /* MarkosWordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkosWordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA7C41829B89B7F00FBA49D /* MarkosWordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkosWordScrambleApp.swift; sourceTree = "<group>"; };
 		0BA7C41A29B89B7F00FBA49D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				0BA7C41829B89B7F00FBA49D /* MarkosWordScrambleApp.swift */,
 				0BA7C41A29B89B7F00FBA49D /* ContentView.swift */,
 				0BA7C41C29B89B8000FBA49D /* Assets.xcassets */,
+				0B41473829D2027F000A8EA0 /* start.txt */,
 				0BA7C41E29B89B8000FBA49D /* Preview Content */,
 			);
 			path = MarkosWordScramble;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA7C42029B89B8000FBA49D /* Preview Assets.xcassets in Resources */,
+				0B41473929D2027F000A8EA0 /* start.txt in Resources */,
 				0BA7C41D29B89B8000FBA49D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
